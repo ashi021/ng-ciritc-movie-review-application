@@ -1,0 +1,24 @@
+<div class="home-container">
+  <h1>Movies by Genre</h1>
+  
+  <!-- Loop through each genre and display its movies -->
+  <div *ngIf="getGenreNames().length">
+    <div *ngFor="let genre of getGenreNames()">
+      <h2>{{ genre }}</h2>
+      <hr>
+      <div class="movies-container">
+        <div *ngFor="let movie of genreMovies[genre]" class="movie-card" [routerLink]="['/movie', movie.id]">
+          <img
+            [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+            alt="{{ movie.title }}"
+            class="movie-poster"
+          />
+          <div class="movie-info">
+            <h3>{{ movie.title }}</h3>
+            <p class="release-year">{{ movie.release_date | date:'yyyy' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

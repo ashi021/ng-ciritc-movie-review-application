@@ -1,0 +1,16 @@
+<div class="search-container">
+  <input
+    type="text"
+    class="search-bar"
+    placeholder="Search for a movie..."
+    (input)="searchMovie($event)"
+    [value]="searchQuery"
+  />
+  <div *ngIf="filteredMovies.length > 0" class="suggestions-dropdown">
+    <ul>
+      <li *ngFor="let movie of filteredMovies" (click)="goToMoviePage(movie.id)">
+        {{ movie.title }}
+      </li>
+    </ul>
+  </div>
+</div>

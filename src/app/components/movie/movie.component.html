@@ -1,0 +1,35 @@
+<div class="movie-container" *ngIf="movie">
+  <div class="movie-title-container">
+    <h1 id="movie-title">{{ movie.title }}</h1>
+  </div>
+  
+  <div class="movie-content-container">
+    <div class="movie-poster-container">
+      <img id="movie-poster" [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="{{ movie.title }}" />
+    </div>
+    <div class="trailer-rating-container">
+      <div class="trailer-container" *ngIf="trailerUrl">
+        <iframe
+          [src]="trailerUrl | safeUrl"
+          frameborder="0"
+          allowfullscreen
+          class="trailer-iframe"
+        ></iframe>
+      </div>
+      <div class="average-rating-container" *ngIf="averageRating !== null">
+        <p id="average-rating">
+          Average rating : <br>
+          <span class="rating-number">{{ averageRating }}</span> / 5
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="movie-details-container">
+    <p>{{ movie.overview }}</p>
+  </div>
+</div>
+
+<div class="comments-container">
+  <app-comments *ngIf="movie" [movieId]="this.movie.id!"></app-comments>
+</div>

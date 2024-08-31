@@ -1,0 +1,108 @@
+/* Container for the entire movie section */
+.movie-container {
+  margin-top: 80px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Block for vertical stacking */
+  background-color: rgb(33, 33, 33, 0.8);
+  padding: 20px;
+}
+
+/* Container for the movie title */
+.movie-title-container {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* Movie title styling */
+#movie-title {
+  font-size: 36px; /* Increased font size */
+  color: #ffffff; /* White text color */
+  margin: 0;
+}
+
+/* Container for the movie content (poster and trailer) */
+.movie-content-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Container for the movie poster */
+.movie-poster-container {
+  flex-shrink: 0; /* Prevents the poster from shrinking */
+}
+
+/* Movie poster image styling */
+#movie-poster {
+  height: 400px; /* Fixed height */
+  width: auto; /* Auto width to maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Container for the trailer and average rating */
+.trailer-rating-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Space between trailer and rating */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Container for the trailer iframe */
+.trailer-container {
+  height: 400px; /* Set the desired height */
+  width: 700px;  /* Set the desired width */
+  background: #000; /* Optional: Black background if needed */
+  overflow: hidden; /* Hide any overflow */
+}
+
+/* Styling for the iframe */
+.trailer-iframe {
+  height: 100%;  /* Full height of the container */
+  width: 100%;   /* Full width of the container */
+  border: 0;     /* Remove default border */
+}
+
+/* Container for the average rating */
+.average-rating-container {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffcc00; /* White text color for contrast */
+  margin-top: 10px; /* Space above the average rating */
+  display: flex;
+  flex-direction: column;
+}
+#average-rating {
+  margin: 0;
+}
+
+.rating-number {
+  font-size: 36px; /* Larger font size for the rating number */
+  color: #fff; /* White color for contrast */
+}
+
+/* Container for the movie details */
+.movie-details-container {
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+/* Movie overview paragraph styling */
+.movie-details-container p {
+  font-size: 20px;
+  color: #ffffff; /* White text color */
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Container for the comments section */
+.comments-container {
+  margin-top: 0;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Block for vertical stacking */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}

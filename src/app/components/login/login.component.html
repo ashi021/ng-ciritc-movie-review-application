@@ -1,0 +1,20 @@
+<form class="login-container" id="login-form" [formGroup]="loginForm">
+  <h4 class="login-title">Login</h4>
+  <input type="email" id="email" class="input-field email-input" placeholder="Email..." [formControl]="email">
+  <input type="password" id="password" class="input-field password-input" placeholder="Password..." [formControl]="password">
+
+  <button id="login-button" class="btn btn-login-submit" [disabled]="loginForm.invalid" (click)="login()">LOGIN</button>
+  <button id="reset-button" class="btn btn-login-reset" (click)="reset()">Reset</button>
+  
+  <h3 id="signup-prompt" class="signup-prompt">
+    Not registered? <a id="signup-link" class="signup-link" routerLink="/signup" routerLinkActive="active">Signup</a>
+  </h3>
+</form>
+
+<!-- Show warnings based on the correct logic -->
+<h3 id="email-warning" class="warning-text email-warning" [hidden]="!email.touched || email.valid">
+  Enter valid email !!!
+</h3>
+<h3 id="password-warning" class="warning-text password-warning" [hidden]="!password.touched || password.valid">
+  Password is required and should be at least 6 characters long !!
+</h3>

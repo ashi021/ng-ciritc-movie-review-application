@@ -1,0 +1,126 @@
+/* Container for the comment form */
+.comment-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Slightly softer background color */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 40px; /* Slightly increased spacing for better separation */
+}
+
+/* Form label styling */
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px; /* Increased margin for better spacing */
+  color: #333; /* Darker color for better contrast */
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Slightly increased padding for better input experience */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px; /* Increased font size for readability */
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increased padding for better button appearance */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+button[type="submit"]:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover:enabled {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Comments Container */
+.comments-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px; /* Adjust the maximum width for better alignment */
+}
+
+/* Individual Comment Styling */
+.comment {
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff; /* White background for a clean look */
+  position: relative;
+}
+
+/* Comment Header Styling */
+.comment-header {
+  display: flex;
+  flex-direction: column; /* Stack username and title vertically */
+  margin-bottom: 10px;
+}
+
+.comment-username {
+  font-size: 22px; /* Slightly larger font for the username */
+  font-weight: bold;
+  color: #ffdd00; /* Gold color for username */
+  margin-bottom: 5px; /* Space between username and title */
+}
+
+.comment-header h3 {
+  margin: 0;
+  font-size: 18px; /* Slightly larger font for the title */
+  color: #333; /* Dark color for the title */
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; /* Space between title and stars */
+}
+
+.rating-stars .fa {
+  font-size: 22px; /* Larger size for stars */
+  color: lightgray; /* Default color for empty stars */
+}
+
+.rating-stars .fa-star {
+  color: gold; /* Color for filled stars */
+}
+
+.rating-stars .fa-star-o {
+  color: lightgray; /* Color for empty stars */
+}
+
+/* Comment Description Styling */
+.comment-description {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: black ;
+}
+
+/* Timestamp Styling */
+#timestamp-comment {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}

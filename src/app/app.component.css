@@ -1,0 +1,26 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+  /* Add padding or margin if needed to avoid overlap with other elements */
+  padding-bottom: 20px;
+}
+
+app-footer {
+  /* Footer is placed at the bottom */
+  width: 100%;
+  background-color: #f8f9fa;
+  
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

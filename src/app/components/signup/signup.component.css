@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1E2A38; /* Deep Blue background for body */
+  color: #E0E0E0; /* Off-White text color */
+  overflow-x: hidden; /* Hide horizontal scroll */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Global Links */
+a {
+  color: #F3C300; /* Gold color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E74C3C; /* Red color on hover */
+  text-decoration: underline;
+}
+
+/* Signup Container Styling */
+.signup-container {
+  width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  text-align: center;
+}
+
+/* Title Styling */
+.signup-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000; /* Gold color for title */
+}
+
+/* Input Fields Styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444; /* Darker border color */
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #333; /* Charcoal background for inputs */
+  color: #E0E0E0; /* Off-White text color for inputs */
+}
+
+/* Button Styling */
+.btn-signup-submit {
+  background-color: #F3C300; /* Gold background */
+  color: #1E2A38; /* Deep Blue text */
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-signup-submit:hover {
+  background-color: #E2B800; /* Darker gold on hover */
+}
+
+.btn-reset {
+  background-color: #E74C3C; /* Red background */
+  color: #E0E0E0; /* Off-White text */
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-reset:hover {
+  background-color: #CC3F3F; /* Darker red on hover */
+}
+
+/* Warning Messages Styling */
+.warning-text {
+  color: #E74C3C; /* Red color for warnings */
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Login Prompt Styling */
+.login-prompt {
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.login-link {
+  color: #0a00d2; /* Gold link */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

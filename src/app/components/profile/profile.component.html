@@ -1,0 +1,15 @@
+<!-- Profile Page -->
+<div class="profile-container">
+  <h2 class="profile-heading">Profile Information</h2>
+  <div class="profile-info">
+    <div class="profile-icon-container">
+      <i class="fa fa-user profile-icon" aria-hidden="true"></i> <!-- FontAwesome user icon -->
+    </div>
+    <div class="profile-text">
+      <p class="profile-label">Username:</p>
+      <h1 class="profile-username">{{ this.authService.getUsername() }}</h1>
+      <p class="profile-label">Email:</p>
+      <h1 class="profile-email">{{ this.authService.getEmail() }}</h1>
+    </div>
+  </div>
+</div>

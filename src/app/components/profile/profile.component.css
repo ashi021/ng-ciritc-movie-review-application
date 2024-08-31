@@ -1,0 +1,72 @@
+/* Profile Page Container */
+.profile-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for clean look */
+}
+
+/* Profile Heading */
+.profile-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Profile Information Section */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between icon and text */
+}
+
+/* Profile Icon Container */
+.profile-icon-container {
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.profile-icon {
+  font-size: 60px; /* Adjust size as needed */
+  color: #007bff; /* Icon color */
+}
+
+/* Profile Text Section */
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between items */
+}
+
+/* Profile Labels */
+.profile-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Profile Username and Email */
+.profile-username,
+.profile-email {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 15px;
+  }
+
+  .profile-heading {
+    font-size: 20px;
+  }
+
+  .profile-username,
+  .profile-email {
+    font-size: 18px;
+  }
+}

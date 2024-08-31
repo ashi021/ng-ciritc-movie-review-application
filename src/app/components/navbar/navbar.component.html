@@ -1,0 +1,30 @@
+<div class="navbar">
+  <h1><a class="navbar-brand" routerLink="/"><i>Critic !</i></a></h1>
+  <div class="search-bar-container">
+    <app-search-bar></app-search-bar>
+  </div>
+  <nav class="navbar-nav">
+    <ul>
+      @if(authService.isAuthenticated()){
+      <li class="navbar-item">
+        <a class="navbar-link" routerLink="/profile" routerLinkActive="active">
+          <i class="fa fa-user navbar-icon" aria-hidden="true"></i>
+          Profile
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" routerLink="/favorite" routerLinkActive="active">
+          <i class="fa fa-heart navbar-icon favorite-icon" aria-hidden="true"></i>
+          Favorites
+        </a>
+      </li>
+      <li><a id="logout-link" class="navbar-link" (click)="this.authService.logout()">Logout</a></li>
+      }@else {
+      <li><a class="navbar-link" routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a class="navbar-link" routerLink="/signup" routerLinkActive="active">Signup</a></li>
+      <li><a class="navbar-link" routerLink="/about" routerLinkActive="active">About</a></li>
+      }
+    </ul>
+  </nav>
+  <hr />
+</div>

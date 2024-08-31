@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../src/assets/black.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  overflow-x: auto; /* Hide horizontal scroll */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F5F5F5; /* Light Gray */
+  border-radius: 4px;
+}
+
+/* Primary Background */
+body {
+  color: #E0E0E0; /* Off-White Text */
+}
+
+/* Headers and Titles */
+h1, h2, h3, h4 {
+  color: #F3C300; /* Gold */
+}
+
+/* Buttons */
+button.primary {
+  background-color: #F3C300; /* Gold */
+  color: #1E2A38; /* Deep Blue */
+}
+
+button.secondary {
+  background-color: #E74C3C; /* Red */
+  color: #E0E0E0; /* Off-White */
+}
+
+/* Links */
+a {
+  color: #F3C300; /* Gold */
+}
+
+a:hover {
+  color: #E74C3C; /* Red */
+}
+
+/* Card Backgrounds and Sections */
+.card, .section {
+  background-color: #333333; /* Charcoal Gray */
+  border: 1px solid #F5F5F5; /* Light Gray Border */
+}
+
+/* Warning Messages */
+.warning {
+  background-color: #E74C3C; /* Red */
+  color: #E0E0E0; /* Off-White Text */
+}
